@@ -1,0 +1,162 @@
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body + object {display: none;}
+body {
+    line-height: 1;
+    background:url(../images/bg.jpg) top center no-repeat black;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 14px;
+    overflow-x:hidden;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* FIM RESET */
+.header {
+    padding: 20px 0 0 0;
+}
+.romeroSite {width:40px; height: 40px; position: fixed; top:30px; right: 0; z-index: 99999;}
+.escolha {margin-top:30px;}
+.escolha div {text-align: center;}
+.title {font-family: 'Exo', sans-serif;}
+.central {padding-bottom: 80px;}
+.central h3 {font-size: 18px;}
+.central h5 {font-size: 15px; margin-top:5px; }
+.central form {
+    width: 80%;
+    margin: 0 auto;
+}
+.romero {
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+    margin-top:80px;
+    text-transform: uppercase;
+}
+.romero span {color: #0ba14b; font-weight: 700;}
+.central label {font-weight: normal;padding-left: 5px;margin-bottom: 5px;}
+.central input {
+    border:none;
+    padding: 20px;
+    border-radius: 10px;
+}
+.aviso {font-size: 14px;color: red;margin-bottom:20px;/* padding-bottom: 20px; */float: left;width: 100%;}
+.central h4 {
+    color: #0ba14b;
+    font-family: 'Exo', sans-serif;
+    text-transform: uppercase;
+    padding-top: 20px;
+    margin-bottom: 11px;
+}
+/*.central button {
+    background: #0ba14b;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    text-transform: uppercase;
+    width: 280px;
+    margin: 0 auto;
+    border:none;
+    border-radius: 10px;
+    padding:20px;
+    font-size: 24px;
+}*/
+footer {
+    background: #0f2d1b;
+    padding-top:15px;
+}
+footer a {
+    cursor: pointer;
+}
+footer h4 {
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.8;
+}
+.faq h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-top:60px;
+}
+.faq h4 {color: white;margin: 0;padding: 5px 0;font-weight: bold;cursor: pointer;}
+.faq h4 a {cursor: pointer;}
+.panel-default>.panel-heading {background: #0ba14b !important;color: white !important;padding: 10px; cursor: pointer;}
+.panel-group .panel {border:none !important;margin-bottom: 15px;}
+.panel-body {color: black;}
+.atencao {color: black;}
+.atencao h2 {font-size: 22px;}
+.parceiro a{
+    color: white;
+    margin-top: 90px;
+    float: left;
+    margin-left: 100px;
+    font-size: 17px;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.clinica {
+    height: 220px;
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+.clinica img {margin-bottom: 10px;}
+.clinica span {
+    float: left;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+    .parceiro {text-align: center;}
+    .parceiro a {margin-top:20px; margin-left:0; text-align: center; float: left; width: 100%;}
+    .romero {margin-top:20px;}
+}
+@media only screen and (max-width: 480px) {
+    .parceiro {text-align: center;}
+    .parceiro a {margin-top:20px; margin-left:0; text-align: center; float: left; width: 100%;}
+    .romero {margin-top:20px;}
+}
