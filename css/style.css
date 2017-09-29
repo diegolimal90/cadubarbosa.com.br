@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body + object {display: none;}
 body {
     line-height: 1;
-    background:url(../images/bg.jpg) top center no-repeat black;
+    background:url(../images/bgnv.jpg) top center no-repeat black;
     font-family: 'Open Sans', sans-serif;
     color: white;
     font-size: 14px;
