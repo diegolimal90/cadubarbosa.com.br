@@ -27,46 +27,44 @@ require 'api/PHPMailer/PHPMailerAutoload.php';
 	$rua 			= $_POST["strRua"];
 	$complemento 	= $_POST["strComplemento"]; 
 	$mensagem 		= $_POST["strMensagem"];
-	
-	if(!empty($res)){
-		$valores = array(
-			'nome' => $nome,
-			'fone' => $fone, 			 
-			'email' => $email, 		 
-			'cep' => $cep, 			
-			'cidade' => $cidade, 		
-			'bairro' => $bairro,		
-			'rua' => $rua, 			
-			'complemento' => $complemento, 	
-			'mensagem' => $mensagem 			 
-		);
-		
-		$template = file_get_contents('../template_email/template_denuncia.html');
-		
-		foreach($valores as $chave => $valor){
-			
-			$template = str_replace('{'.$chave.'}', $valor, $template);
-				
-		}
-		
-		$mail ->Charset = 'UTF-8';										//aceitar caracteres especiais
 
-		//configurar cabeçalho de email
-		$mail ->setFrom('contato@ignicaonetwork.com', 'Site Cadu Barbosa');		//insere o remetente
-		$mail ->addAddress('contato@ignicaonetwork.com', 'Site Cadu Barbosa');					//adiciona o destinatario
-		$mail ->isHTML(true);											//formato do email em html
+	$valores = array(
+		'color' => 'red',
+		'titulo' => utf8_decode('DENÚNCIA'),
+		'nome' => utf8_decode($nome),
+		'fone' => $fone, 			 
+		'email' => $email, 		 
+		'cep' => $cep, 			
+		'cidade' => utf8_decode($cidade), 		
+		'bairro' => utf8_decode($bairro),		
+		'rua' => utf8_decode($rua), 			
+		'complemento' => utf8_decode($complemento), 	
+		'mensagem' => utf8_decode($mensagem) 			 
+	);
 
-		//conteudo do email
-		$mail ->Subject = utf8_encode("DENUNCIA");										//adiciona assunto ao email
-		$mail ->Body = $template;
-		
-		//verificação se o email foi enviado
-		if(!$mail->send()) {
-			die(json_encode(array('status' => 'Mensagem nao foi enviada.')));
-			//echo 'Error: ' . $mail->ErrorInfo;
-		} else {
-			die(json_encode(array('status' => 'ok')));
-		}
-		
-		
+	$template = file_get_contents('../template_email/template_denuncia.html');
+
+	foreach($valores as $chave => $valor){
+
+		$template = str_replace('{'.$chave.'}', $valor, $template);
+
+	}
+
+	$mail ->Charset = 'UTF-8';										//aceitar caracteres especiais
+
+	//configurar cabeçalho de email
+	$mail ->setFrom('contato@cadubarbosa.com.br', 'Site Cadu Barbosa');		//insere o remetente
+	$mail ->addAddress('contato@cadubarbosa.com.br', 'Site Cadu Barbosa');					//adiciona o destinatario
+	$mail ->isHTML(true);											//formato do email em html
+
+	//conteudo do email
+	$mail ->Subject = utf8_encode("DENUNCIA");										//adiciona assunto ao email
+	$mail ->Body = $template;
+
+	//verificação se o email foi enviado
+	if(!$mail->send()) {
+		die(json_encode(array('status' => 'Mensagem nao foi enviada.')));
+		//echo 'Error: ' . $mail->ErrorInfo;
+	} else {
+		die(json_encode(array('status' => 'ok')));
 	}
