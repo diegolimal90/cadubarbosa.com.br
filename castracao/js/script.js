@@ -43,7 +43,7 @@ $(document).ready(function () {
                 var dados = $("#formContato").serialize();
 
                 $.ajax({
-                    url: 'ajax/contato.ajax.php',
+                    url: '../php/castracao.php',
                     data: dados,
                     type: 'post',
                     dataType: 'json',

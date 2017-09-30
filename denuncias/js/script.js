@@ -52,7 +52,7 @@ $(document).ready(function () {
 						
                         if (result.status == 'ok') {
                             // limpando o formulário
-                            $("#formContato")[0].reset();
+                            window.location.href = "http://www.cadubarbosa.com.br/";
 							
                         }
                     }

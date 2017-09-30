@@ -28,10 +28,10 @@ require 'api/PHPMailer/PHPMailerAutoload.php';
 	$mensagem 		= $_POST["strMensagem"];
 
 	$valores = array(
-		'color' => 'red',
+		'color' => '#8b59e3',
 		'titulo' => utf8_decode('CASTRAÇÃO'),
 		'subtitulo1' => utf8_decode('Dados da Pessoal'),
-		'subtitulo2' => utf8_decode('DETALHES DOS MAUS TRATOS E/OU CRUELDADE'),
+		'subtitulo2' => utf8_decode('Dados do Animal'),
 		'nome' => utf8_decode($nome),
 		'fone' => $fone, 			 
 		'email' => $email, 		 

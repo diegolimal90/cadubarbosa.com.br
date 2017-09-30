@@ -134,3 +134,22 @@ p.sucesso {
 :-ms-input-placeholder { /* Internet Explorer 10+ */
   color: #000 !important;
 }
+@media (max-width: 1024px){
+	.panel {
+    	width: 100%;
+    	margin: 0 auto;
+	}
+	.container {
+    	width: 100%;
+	}
+	.central form {
+		width: 95%;
+		margin: 0 auto;
+	}
+	.panel-body {
+		padding: 0px;
+	}
+	.container {
+		padding-right: 0px;
+	}
+}
