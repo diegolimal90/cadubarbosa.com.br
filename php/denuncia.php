@@ -1,7 +1,6 @@
 <?php
-if(!empty($_POST)){
-	
-require 'PHPMailer/PHPMailerAutoload.php';
+error_reporting(E_ALL);
+require 'api/PHPMailer/PHPMailerAutoload.php';
 
 
 	//Instancio a classe PHPMAILER
@@ -71,7 +70,3 @@ require 'PHPMailer/PHPMailerAutoload.php';
 		
 		
 	}
-	
-	
-	
-}
