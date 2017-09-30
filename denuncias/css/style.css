@@ -111,3 +111,26 @@ p.sucesso {
 }
 .atencao {color: black;}
 .atencao h2 {font-size: 22px;}
+
+#formContato input, select, textarea{
+	font-size: 20px !important;
+	border: 1px solid #ed1231 !important;
+}
+#formContato label{
+	color: #000
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #000 !important;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #000 !important;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #000 !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #000 !important;
+}
