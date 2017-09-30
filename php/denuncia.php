@@ -11,13 +11,13 @@ require 'PHPMailer/PHPMailerAutoload.php';
 	
 	//configurar acesso ao email
 	$mail->IsSMTP(); 
-	$mail->Host = "smtp.ignicaonetwork.com"; 
+	$mail->Host = "smtp.cadubarbosa.com.br"; 
 	$mail->SMTPAuth = true; 
-	$mail->Port = 587; // 
-	$mail->SMTPSecure = false; // 
-	$mail->SMTPAutoTLS = false; // 
-	$mail->Username = 'contato@ignicaonetwork.com'; 
-	$mail->Password = 'Ignicao123456';
+	$mail->Port = 587;
+	$mail->SMTPSecure = false;
+	$mail->SMTPAutoTLS = false;
+	$mail->Username = 'contato@cadubarbosa.com.br'; 
+	$mail->Password = 'barbosa1234';
 		
 	$nome 			= $_POST["strNome"];
 	$fone 			= $_POST["strFone"]; 
@@ -53,20 +53,20 @@ require 'PHPMailer/PHPMailerAutoload.php';
 		$mail ->Charset = 'UTF-8';										//aceitar caracteres especiais
 
 		//configurar cabeçalho de email
-		$mail ->setFrom('contato@ignicaonetwork.com', 'Contato IgnicaoNetwork');		//insere o remetente
-		$mail ->addAddress($email);					//adiciona o destinatario
+		$mail ->setFrom('contato@ignicaonetwork.com', 'Site Cadu Barbosa');		//insere o remetente
+		$mail ->addAddress('contato@ignicaonetwork.com', 'Site Cadu Barbosa');					//adiciona o destinatario
 		$mail ->isHTML(true);											//formato do email em html
 
 		//conteudo do email
 		$mail ->Subject = utf8_encode("DENUNCIA");										//adiciona assunto ao email
 		$mail ->Body = $template;
-
+		
 		//verificação se o email foi enviado
 		if(!$mail->send()) {
-			echo 'Mensagem nao foi enviada.';
-			echo 'Error: ' . $mail->ErrorInfo;
+			die(json_encode(array('status' => 'Mensagem nao foi enviada.')));
+			//echo 'Error: ' . $mail->ErrorInfo;
 		} else {
-			echo "<script type='text/javascript'> alert('Enviamos seus dados para o email!'); window.location.href = '../login.php';</script>";
+			die(json_encode(array('status' => 'ok')));
 		}
 		
 		

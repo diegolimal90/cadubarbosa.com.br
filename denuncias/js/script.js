@@ -31,7 +31,7 @@ $(document).ready(function () {
                 var dados = $("#formContato").serialize();
 
                 $.ajax({
-                    url: 'ajax/contato.ajax.php',
+                    url: '../php/denuncia.php',
                     data: dados,
                     type: 'post',
                     dataType: 'json',
@@ -47,10 +47,13 @@ $(document).ready(function () {
                         $("#contato_sucesso").hide();
                         $("#contato_erro").html(result.msg);
                         $("#contato_erro").show();
-
+						
+						console.log(result.status);
+						
                         if (result.status == 'ok') {
                             // limpando o formulário
                             $("#formContato")[0].reset();
+							
                         }
                     }
                 });
