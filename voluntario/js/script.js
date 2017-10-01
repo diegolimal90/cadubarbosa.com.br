@@ -28,7 +28,7 @@ $(document).ready(function () {
                 var dados = $("#formContato").serialize();
 
                 $.ajax({
-                    url: 'ajax/contato.ajax.php',
+                    url: '../php/voluntario.php',
                     data: dados,
                     type: 'post',
                     dataType: 'json',
@@ -47,7 +47,7 @@ $(document).ready(function () {
 
                         if (result.status == 'ok') {
                             // limpando o formulário
-                            $("#formContato")[0].reset();
+                            window.location.href = "http://www.cadubarbosa.com.br/";
                         }
                     }
                 });

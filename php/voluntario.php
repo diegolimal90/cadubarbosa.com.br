@@ -28,10 +28,9 @@ require 'api/PHPMailer/PHPMailerAutoload.php';
 	$mensagem 		= $_POST["strMensagem"];
 
 	$valores = array(
-		'color' => '#e2f700',
-		'titulo' => utf8_decode('ATENDIMENTO VETERINÁRIO'),
-		'subtitulo1' => utf8_decode('Dados da Pessoal'),
-		'subtitulo2' => utf8_decode('DETALHES DOS ATENDIMENTO'),
+		'color' => '#07ffde',
+		'titulo' => utf8_decode('VOLUNTÁRIO'),
+		'subtitulo1' => utf8_decode('Dados da Pessoa'),
 		'nome' => utf8_decode($nome),
 		'fone' => $fone, 			 
 		'email' => $email, 		 
@@ -43,7 +42,7 @@ require 'api/PHPMailer/PHPMailerAutoload.php';
 		'mensagem' => utf8_decode($mensagem) 			 
 	);
 
-	$template = file_get_contents('../template_email/template_veterinario.html');
+	$template = file_get_contents('../template_email/template_voluntario.html');
 
 	foreach($valores as $chave => $valor){
 
@@ -59,7 +58,7 @@ require 'api/PHPMailer/PHPMailerAutoload.php';
 	$mail ->isHTML(true);											//formato do email em html
 
 	//conteudo do email
-	$mail ->Subject = utf8_decode("ATENDIMENTO VETERINÁRIO");										//adiciona assunto ao email
+	$mail ->Subject = utf8_decode("VOLUNTÁRIO");										//adiciona assunto ao email
 	$mail ->Body = $template;
 
 	//verificação se o email foi enviado
