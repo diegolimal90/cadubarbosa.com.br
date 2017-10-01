@@ -55,10 +55,10 @@ require 'api/PHPMailer/PHPMailerAutoload.php';
 		'doente' 		=> $doente,
 		'sexo' 			=> $sexo,
 		'idade' 		=> $idade,
-		'alergia' 		=> $alergia,
+		'alergia' 		=> utf8_decode($alergia),
 		'tpalergia' 	=> $tpalergia,
 		'tpcirurgia' 	=> $tpCirurgia,
-		'cirurgia' 		=> $cirurgia,	
+		'cirurgia' 		=> utf8_decode($cirurgia),	
 		'mensagem' 		=> utf8_decode($mensagem)
 	);
 
