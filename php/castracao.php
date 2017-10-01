@@ -17,33 +17,52 @@ require 'api/PHPMailer/PHPMailerAutoload.php';
 	$mail->Username = 'contato@cadubarbosa.com.br'; 
 	$mail->Password = 'barbosa1234';
 		
-	$nome 			= $_POST["strNome"];
-	$fone 			= $_POST["strFone"]; 
-	$email 			= $_POST["strEmail"]; 
-	$cep 			= $_POST["strCep"]; 
-	$cidade 		= $_POST["strCidade"];
-	$bairro 		= $_POST["strBairro"]; 
-	$rua 			= $_POST["strRua"];
-	$complemento 	= $_POST["strComplemento"]; 
-	$mensagem 		= $_POST["strMensagem"];
+
+	$nome 			= $_POST['strNome'];
+	$fone 			= $_POST['strFone'];
+	$email 			= $_POST['strEmail'];
+	$cep 			= $_POST['strCep'];
+	$cidade 		= $_POST['strCidade'];
+	$bairro 		= $_POST['strBairro'];
+	$rua 			= $_POST['strRua'];
+	$complemento 	= $_POST['strComplemento'];
+	$mensagem 		= $_POST['strMensagem'];
+	$animal			= $_POST['strTipo'];
+	$jejum			= $_POST['strSimJejum'];
+	$doente			= $_POST['strSimDoente'];
+	$sexo			= $_POST['strSexo'];
+	$idade			= $_POST['strIdade'];
+	$cirurgia	 	= $_POST['strOpCirurgia'];
+	$tpCirurgia		= $_POST['strCirurgia'];
+	$alergia		= $_POST['strOpAlergia'];
+	$tpalergia		= $_POST['strAlergia'];
 
 	$valores = array(
-		'color' => '#8b59e3',
-		'titulo' => utf8_decode('CASTRAÇÃO'),
-		'subtitulo1' => utf8_decode('Dados da Pessoal'),
-		'subtitulo2' => utf8_decode('Dados do Animal'),
-		'nome' => utf8_decode($nome),
-		'fone' => $fone, 			 
-		'email' => $email, 		 
-		'cep' => $cep, 			
-		'cidade' => utf8_decode($cidade), 		
-		'bairro' => utf8_decode($bairro),		
-		'rua' => utf8_decode($rua), 			
-		'complemento' => utf8_decode($complemento), 	
-		'mensagem' => utf8_decode($mensagem) 			 
+		'color' 		=> '#8b59e3',
+		'titulo' 		=> utf8_decode('CASTRAÇÃO'),
+		'subtitulo1' 	=> utf8_decode('Dados da Pessoal'),
+		'nome' 			=> utf8_decode($nome),
+		'fone' 			=> $fone, 			 
+		'email' 		=> $email, 		 
+		'cep' 			=> $cep, 			
+		'cidade' 		=> utf8_decode($cidade), 		
+		'bairro'		=> utf8_decode($bairro),		
+		'rua' 			=> utf8_decode($rua), 			
+		'complemento' 	=> utf8_decode($complemento),
+		'subtitulo2' 	=> utf8_decode('Detalhes do Animal'),
+		'animal' 		=> $animal,
+		'jejum' 		=> $jejum,
+		'doente' 		=> $doente,
+		'sexo' 			=> $sexo,
+		'idade' 		=> $idade,
+		'alergia' 		=> $alergia,
+		'tpalergia' 	=> $tpalergia,
+		'tpcirurgia' 	=> $tpCirurgia,
+		'cirurgia' 		=> $cirurgia,	
+		'mensagem' 		=> utf8_decode($mensagem)
 	);
 
-	$template = file_get_contents('../template_email/template_principal.html');
+	$template = file_get_contents('../template_email/template_castracao.html');
 
 	foreach($valores as $chave => $valor){
 
@@ -59,7 +78,7 @@ require 'api/PHPMailer/PHPMailerAutoload.php';
 	$mail ->isHTML(true);											//formato do email em html
 
 	//conteudo do email
-	$mail ->Subject = utf8_encode("DENUNCIA");										//adiciona assunto ao email
+	$mail ->Subject = utf8_decode("CASTRAÇÃO");										//adiciona assunto ao email
 	$mail ->Body = $template;
 
 	//verificação se o email foi enviado

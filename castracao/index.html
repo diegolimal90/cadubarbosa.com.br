@@ -56,172 +56,97 @@
             </div>
             <div class="panel panel-default">
 				<div class="panel-heading">
-					 <h3 class="text-center">Solicite aqui uma castração grátis para Animais da Cidade de Praia Grande.</h3>
-					<h5 class="text-center">Preencha o formulário para que a nossa equipe possa entrar em contato com você.<br>
-	 * Todos os seus dados são mantidos em sigilo e jamais serão divulgados </h5>
+			 		<div class="panel-title">
+				 		<h3 class="text-center">Solicite aqui uma castração grátis para Animais da Cidade de Praia Grande.</h3>
+						<h5 class="text-center">Preencha o formulário para que a nossa equipe possa entrar em contato com você.<br>
+		 * Todos os seus dados são mantidos em sigilo e jamais serão divulgados </h5>
+					</div>
 				</div>
 				<div class="panel-body">
 					<form method="post" name="formContato" id="formContato">
 						<div class="col-lg-12">
 							<h4>Dados Pessoais</h4>
 						</div>
-						<div class="col-lg-12">
-							<div class="form-group">
-								<input type="text" class="form-control SafariFix" id="strNome" name="strNome" placeholder="Nome">
-							</div>
-						</div>	
-						<div class="col-lg-12">
-							<div class="form-group">
-								<input type="text" class="form-control" id="strFone" name="strFone" placeholder="Telefone" onkeypress="mascara(this, masktelefone)" maxlength="15">
-							</div>
+						<div class="form-group">
+							<input type="text" class="form-control SafariFix" id="strNome" name="strNome" placeholder="Nome">
 						</div>
-						<div class="col-lg-12">
-							<div class="form-group">
-								<input type="email" class="form-control" id="strEmail" name="strEmail" placeholder="E-mail">
-							</div>
-						</div>	
-						<div class="col-lg-12">
-							<div class="form-group">
-								<input type="text" class="form-control" id="strCep" name="strCep" placeholder="CEP" onkeypress="mascara(this, maskcep)" maxlength="9">
-							</div>
-						</div><!-- fim linha -->
-
-						<div class="col-lg-12"><!-- inicio linha-->
-							<div class="form-group">
-								<input type="text" class="form-control" id="strCidade" name="strCidade" placeholder="Cidade">
-							</div>
-						</div>	
-
-						<div class="col-lg-12"><!-- inicio linha-->
-							<div class="form-group">
-								<input type="text" class="form-control" id="strBairro" name="strBairro" placeholder="Bairro">
-							</div>
-						</div>	
-						<div class="col-lg-12">
-							<div class="form-group">
-								<input type="text" class="form-control" id="strRua" name="strRua" placeholder="Rua">
-							</div>
-						</div><!-- fim linha -->
-						<div class="col-lg-12"><!-- inicio linha-->
-							<div class="form-group">
-								<input type="text" class="form-control" id="strComplemento" name="strComplemento" placeholder="Complemento">
-							</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strFone" name="strFone" placeholder="Telefone" onkeypress="mascara(this, masktelefone)" maxlength="15">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" id="strEmail" name="strEmail" placeholder="E-mail">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strCep" name="strCep" placeholder="CEP" onkeypress="mascara(this, maskcep)" maxlength="9">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strCidade" name="strCidade" placeholder="Cidade">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strBairro" name="strBairro" placeholder="Bairro">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strRua" name="strRua" placeholder="Rua">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strComplemento" name="strComplemento" placeholder="Complemento">
 						</div>
 						<div class="col-lg-12">
 							<h4>Detalhes do Animal </h4>
 						</div>
-						 <div class="col-lg-12">
-							<div class="form-group">
-								<label for="strTipo">Escolha o tipo de animal</label>
-								<div class="row">
-									<div class="col-lg-12">
-										<b class="radio"><input type="radio" id="strCachorro" name="strCachorro" class="form-check-input"  placeholder="Cachorro" >
-										Cachorro</b>
-										<b class="radio"><input type="radio" id="strGato" name="strGato" class="form-check-input" placeholder="Gato">
-										Gato</b>
-									</div>
-								</div>
-							</div>
+						<div class="form-group">
+							<select name="strTipo" id="strTipo" class="form-control">
+								<option selected disabled="true">Escolha o tipo de animal</option>
+								<option value="cachorro">Cachorro</option>
+								<option value="gato">Gato</option>
+							</select>
 						</div>
-						<div>
-							<div class="col-lg-12">
-								<div class="form-group">
-									<label for="strCep">Você está ciente que o animal deve está em jejum alimentar por 12 horas antes da cirurgia?</label>
-
-											<b class="radio"><input type="radio" id="strSimJejum" name="strSimJejum" class="form-check-input"  placeholder="Macho" >
-											Sim</b>
-
-
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="form-group">
-									<label for="strCep">Você está ciente que o animal não pode está doente/prenha?</label>
-									<div class="row">
-										<div class="col-lg-12">
-											<b class="radio"><input type="radio" id="strSimDoente" name="strSimDoente" class="form-check-input"  placeholder="Macho" >
-											Sim</b>
-									</div>
-									</div>
-								</div>
-							</div>
+						<div class="form-group">
+							<select name="strSimJejum" id="strSimJejum" class="form-control">
+								<option selected disabled="true">Você está ciente que o animal deve está em jejum alimentar por 12 horas antes da cirurgia?</option>
+								<option value="sim">Sim</option>
+							</select>
 						</div>
-
-						<div class="col-lg-12">
-							<div class="form-group">
-								<label for="strCep">Sexo do animal</label>
-								<div class="row">
-									<div class="col-lg-12">
-										<b class="radio"><input type="radio" id="strMacho" name="strMacho" class="form-check-input"  placeholder="Macho" >
-										Macho</b>
-										<b class="radio"><input type="radio" id="strFemea" name="strFemea" class="form-check-input" placeholder="Macho">
-										Fêmea</b>
-									</div>
-								</div>
-							</div>
+						<div class="form-group">
+							<select name="strSimDoente" id="strSimDoente" class="form-control">
+								<option selected disabled="true">Você está ciente que o animal não pode está doente/prenha?</option>
+								<option value="sim">Sim</option>
+							</select>
 						</div>
-
-						<div class="col-lg-12"><!-- inicio linha-->
-							<div class="form-group">
-								<label for="strCidade">Idade do animal</label>
-								<input type="text" class="form-control" id="strIdade" name="strIdade" placeholder="Escreva aqui">
-							</div>
-						</div>  <!-- fim linha -->
-
-						<div class="col-lg-12">
-							<div class="form-group">
-								<label for="strCep">O animal fez algum procedimento cirúrgico nos últimos meses? 
-	</label>
-								<div class="row">
-									<div class="col-lg-12">
-										<b class="radio"><input type="radio" id="strSimCururgia" name="strSimCururgia" class="form-check-input"  placeholder="Macho" >
-										Sim</b>
-										<b class="radio"><input type="radio" id="strNaoCirurgia" name="strNaoCirurgia" class="form-check-input" placeholder="Macho">
-										Não</b>
-									</div>
-								</div>
-							</div>
+						<div class="form-group">
+							<select name="strSexo" id="strSexo" class="form-control">
+								<option selected disabled="true">Sexo do animal</option>
+								<option value="macho">Macho</option>
+								<option value="femea">Fêmea</option>
+							</select>
 						</div>
-
-						<div class="col-lg-12"><!-- inicio linha-->
-							<div class="form-group">
-								<label for="strCidade">Se sim, qual? (cirurgia)</label>
-								<input type="text" class="form-control" id="strCirurgia" name="strCirurgia" placeholder="Escreva aqui">
-							</div>
-						</div>  <!-- fim linha -->
-
-						<div class="col-lg-12">
-							<div class="form-group">
-								<label for="strCep">O animal é alérgico a algum medicamento?
-	</label>
-								<div class="row">
-									<div class="col-lg-12">
-										<b class="radio"><input type="radio" id="strSimAlergia" name="strSimAlergia" class="form-check-input"  placeholder="Sim" >
-										Sim</b>
-										<b class="radio"><input type="radio" id="strNaoAlergia" name="strNaoAlergia" class="form-check-input" placeholder="Não">
-										Não</b>
-									</div>
-								</div>
-							</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strIdade" name="strIdade" placeholder="Idade do animal">
 						</div>
-
-						<div class="col-lg-12"><!-- inicio linha-->
-							<div class="form-group">
-								<label for="strCidade">Se sim, qual? (alergia)</label>
-								<input type="text" class="form-control" id="strAlergia" name="strAlergia" placeholder="Escreva aqui">
-							</div>
-						</div>  <!-- fim linha -->
-
-
-						<div class="col-lg-12">
-							<div class="form-group">
-								<label for="strMensagem">Observações adicionais (opcional)</label>
-								<textarea class="form-control" rows="3" id="strMensagem" name="strMensagem"></textarea>
-							</div>
-						</div><!-- fim linha -->
+						<div class="form-group">
+							<select name="strOpCirurgia" id="strOpCirurgia" class="form-control">
+								<option selected disabled="true">O animal fez algum procedimento cirúrgico nos últimos meses?</option>
+								<option value="sim">Sim</option>
+								<option value="não">Não</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strCirurgia" name="strCirurgia" placeholder="Se sim, qual? (cirurgia)">
+						</div>
+						<div class="form-group">
+							<select name="strOpAlergia" id="strOpAlergia" class="form-control">
+								<option selected disabled="true">O animal é alérgico a algum medicamento?</option>
+								<option value="sim">Sim</option>
+								<option value="não">Não</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strAlergia" name="strAlergia" placeholder="Se sim, qual? (alergia)">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" rows="3" id="strMensagem" name="strMensagem" placeholder="Observações adicionais (opcional)"></textarea>
+						</div>
 						<div class="col-lg-12 text-center">
-							<!-- <span class="aviso text-center">A denúncia de maus tratos é legitimada pelo Art. 32, da Lei Federal nº. 9.605, de 12.02.1998 (Lei de Crimes Ambientais).
-	</span> -->
 							<span class="aviso text-center">Entraremos em contato conforme disponibilidade do centro cirúrgico.</span>
 							<button type="submit" id="btnEnviar">SOLICITAR!</button>
 							<div id="contato_erro"></div>

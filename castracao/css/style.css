@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background:url(../images/bg.jpg) top center no-repeat black;
+    background-color: rgba(139, 90, 227, 0.44);
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     overflow-x:hidden;
@@ -63,7 +63,7 @@ table {
 .central h3 {font-size: 18px;}
 .central h5 {font-size: 15px; margin-top:5px; }
 .central form {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 .romero {
@@ -113,9 +113,15 @@ p.sucesso {
 .atencao h2 {font-size: 22px;}
 
 
-#formContato input, select, textarea{
+#formContato input, select{
 	font-size: 20px !important;
 	border: 1px solid #8b59e3 !important;
+    height: 52px !important;
+}
+#formContato textarea{
+	font-size: 20px !important;
+	border: 1px solid #8b59e3 !important;
+	resize: none;
 }
 #formContato label{
 	color: #000
@@ -134,4 +140,30 @@ p.sucesso {
 
 :-ms-input-placeholder { /* Internet Explorer 10+ */
   color: #000 !important;
+}
+.panel {
+    width: 75%;
+    margin: 0 auto;
+}
+.panel-title h3 {
+    font-size: 24px !important;
+    font-weight: bold;
+    font-family: verdana;
+    padding: 20px 0px 20px 0px;
+}
+.header{
+	padding-left: 12.3%;
+}
+@media (max-width: 1024px){
+	.panel {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.container {
+		width: 100% !important;
+	}
+	
+	.header{
+		padding-left: 0px;
+	}
 }
