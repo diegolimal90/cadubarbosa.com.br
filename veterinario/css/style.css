@@ -31,9 +31,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background:url(../images/bg.jpg) top center no-repeat black;
+    background-color: rgba(0, 0, 0, 0.45);
     font-family: 'Open Sans', sans-serif;
-    color: white;
     font-size: 14px;
     overflow-x:hidden;
 }
@@ -64,7 +63,7 @@ table {
 .central h3 {font-size: 18px;}
 .central h5 {font-size: 15px; margin-top:5px; }
 .central form {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 .romero {
@@ -73,7 +72,7 @@ table {
     margin-top:30px;
     text-transform: uppercase;
 }
-.romero span {color: #e2f600; font-weight: 700;}
+.romero span {color: #e2f700; font-weight: 700;}
 .central label {font-weight: normal;padding-left: 5px;margin-bottom: 5px;}
 .central input {
     border:none;
@@ -82,14 +81,14 @@ table {
 }
 .aviso {font-size: 14px;color: red;margin-bottom:20px;/* padding-bottom: 20px; */float: left;width: 100%;}
 .central h4 {
-    color: #e2f600;
+    color: #e2f700;
     font-family: 'Exo', sans-serif;
     text-transform: uppercase;
     padding-top: 20px;
     margin-bottom: 11px;
 }
 .central button {
-    background: #e2f600;
+    background: #e2f700;
     color: black;
     font-family: 'Exo', sans-serif;
     text-transform: uppercase;
@@ -109,5 +108,62 @@ p.sucesso {
     font-weight: bold;
     font-size: 16px;
 }
+.form-group b {margin-right: 15px;float: left;margin-top: 0 !important;width: 22%;margin-left: 30px;/* margin-bottom: 0; */line-height: 22px;}
 .atencao {color: black;}
 .atencao h2 {font-size: 22px;}
+
+
+#formContato input, select{
+	font-size: 20px !important;
+	border: 1px solid #e2f700 !important;
+    height: 52px !important;
+}
+#formContato textarea{
+	font-size: 20px !important;
+	border: 1px solid #e2f700 !important;
+	resize: none;
+}
+#formContato label{
+	color: #000
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #000 !important;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #000 !important;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #000 !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #000 !important;
+}
+.panel {
+    width: 75%;
+    margin: 0 auto;
+}
+.panel-title h3 {
+    font-size: 24px !important;
+    font-weight: bold;
+    font-family: verdana;
+    padding: 20px 0px 20px 0px;
+}
+.header{
+	padding-left: 12.3%;
+}
+@media (max-width: 1024px){
+	.panel {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.container {
+		width: 100% !important;
+	}
+	
+	.header{
+		padding-left: 0px;
+	}
+}
