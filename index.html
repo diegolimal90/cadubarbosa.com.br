@@ -64,7 +64,7 @@
                     <a href="voluntario/"><img src="images/voluntario.png" alt="seja 1 voluntario" /></a>
                 </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <a href="" target=""><img src="images/entreEmcontato.png" alt="adocao online encontre 1 amigo campanha" /></a>
+                    <a data-toggle="modal" data-target="#myModal"><img src="images/entreEmcontato.png" alt="entre em contato" /></a>
                 </div>
                 
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -81,5 +81,36 @@
                 </div>
             </div>
         </footer>
+        
+        <!-- Modal -->
+		<div class="modal contato fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" style="color: #49D754;">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h1 class="modal-title" id="myModalLabel">Entre em Contato</h1>
+					</div>
+				  	<form method="post" name="formContato" id="formContato">
+						<div class="modal-body">
+							<div class="form-group">
+							  <input type="text" class="form-control" id="strNome" name="strNome" placeholder="Nome">
+							</div>
+							<div class="form-group">
+							  <input type="text" class="form-control" id="strFone" name="strFone" placeholder="Telefone" onkeypress="mascara(this, masktelefone)" maxlength="15">
+							</div>
+							<div class="form-group">
+							  <input type="email" class="form-control" id="strEmail" name="strEmail" placeholder="E-mail">
+							</div>
+							<div class="form-group">
+							  <textarea class="form-control" rows="3" id="strMensagem" name="strMensagem" placeholder="Mensagem"></textarea>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" id="btnEnviar" class="btn btn-primary">ENVIAR</button> 
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
     </body>
 </html>

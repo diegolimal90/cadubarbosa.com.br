@@ -162,3 +162,31 @@ footer h4 {
     .parceiro a {margin-top:20px; margin-left:0; text-align: center; float: left; width: 100%;}
     .romero {margin-top:20px;}
 }
+#formContato input, select{
+	font-size: 20px !important;
+	border: 1px solid #49D754 !important;
+    height: 52px !important;
+}
+#formContato textarea{
+	font-size: 20px !important;
+	border: 1px solid #49D754 !important;
+	resize: none;
+}
+#formContato label{
+	color: #000
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #000 !important;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #000 !important;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #000 !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #000 !important;
+}

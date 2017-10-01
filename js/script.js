@@ -31,7 +31,7 @@ $(document).ready(function () {
                 var dados = $("#formContato").serialize();
 
                 $.ajax({
-                    url: 'ajax/contato.ajax.php',
+                    url: 'php/contato.php',
                     data: dados,
                     type: 'post',
                     dataType: 'json',
@@ -40,7 +40,7 @@ $(document).ready(function () {
                         $("#btnEnviar").prop('disabled', true);
                     },
                     complete: function () {
-                        $("#btnEnviar").html('DENUNCIAR');
+                        $("#btnEnviar").html('ENVIAR');
                         $("#btnEnviar").prop('disabled', false);
                     },
                     success: function (result) {
@@ -50,7 +50,8 @@ $(document).ready(function () {
 
                         if (result.status == 'ok') {
                             // limpando o formulário
-                            $("#formContato")[0].reset();
+                            alert("Mensagem enviada com sucesso!");
+							window.location.href = "http://www.cadubarbosa.com.br/"
                         }
                     }
                 });
