@@ -1,0 +1,203 @@
+    <!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Solicita Recife - Requerimentos Online - Romero Albuquerque</title>
+
+        <meta name="author" content="Romero Albuquerque - Pedro Menezes">
+        <meta name="description" content="Solicita Recife, requerimentos online para a cidade Recife">
+        <meta name="keywords" content="solicita, recife, romero albuquerque, requerimento, pernambuco, jaboatao, olinda, limpeza, poda de arvores, buraco, pavimentacao, seguranca, iluminacao publica, capinacao, calçadas">
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/script.js"></script>
+
+        <meta property="og:image" content="http://solicitarecife.com.br/images/logo_solicita.png" />
+        <meta property="og:title" content="Solicita Recife - Por Romero Albuquerque" />
+        <meta property="og:description" content="Plataforma digital para solicitar requerimentos online para a cidade Recife">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" >
+
+        <link href="https://fonts.googleapis.com/css?family=Exo:400,700" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+        <!-- CSS Style -->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+
+        <style>
+            @media only screen and (max-width: 480px) {
+                .escolha div {margin-bottom: 20px;}
+                .romero {width: 100% !important: text-align:center !important;}
+            }
+        </style>
+    </head>
+
+    <body>
+        <p class="romeroSite"><a href="https://www.facebook.com/romeroalbuquerqueoficial" target="_blank"><img src="images/facebook.jpg" /></a></p>
+        <div class="container central">
+            <div class="row clearfix header">
+                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 logo"><img src="images/logo.png" alt="solicita recife logo" class="img-responsive" /></div>
+                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 parceiro">
+                    
+                </div>
+                
+                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 text-right romero">
+                    <p>Organizado pelo vereador<br><span>Romero Albuquerque</span></p>
+                </div>
+            </div>
+
+            <div class="row clearfix intro">
+              <h2>Somos uma plataforma de comunicação entre população e poder público, em que o cidadão poderá solicitar requerimentos para a Prefeitura da Cidade do Recife.
+                <br><br>
+                Após o preenchimento do formulário, enviaremos o requerimento para o órgão responsável.
+
+                <br>  <br>
+                
+               <span>Escolha o motivo da solicitação: </span>
+              </h2>
+            </div>
+            
+            <div class="row clearfix escolha">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <a href="seguranca/"><img src="images/i_seguranca.png" alt="seguranca" /></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <a href="limpeza/"><img src="images/i_limpeza.png" alt="limpeza" /></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <a href="iluminacao/"><img src="images/i_iluminacao.png" alt="iluminacao publica" /></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <a href="capinacao/"><img src="images/i_capinacao.png" alt="capinacao" /></a>
+                </div>
+            </div>
+            <div class="row clearfix escolha">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <a href="pavimentacao/"><img src="images/i_pavimentacao.png" alt="pavimentacao" /></a>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <a href="calcadas/"><img src="images/i_calcada.png" alt="recuperacao de calcadas" /></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <a href="sinalizacao/"><img src="images/i_sinalizacao.png" alt="sinalizacao" /></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <a href="outros/"><img src="images/i_outros.png" alt="outros" /></a>
+                </div>
+            </div>
+
+            
+
+        <!-- Modal -->
+<div class="modal atencao fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="myModalLabel">Clínicas parceiras</h2>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+           <div class="col-lg-4 col-sm-4 col-md-4 clinica">
+             <img src="images/nortepet.jpg" alt="norte pet" />
+             <span>
+               Endereço: Av. Norte Miguel Arraes de Alencar, 5924 - Casa Amarela, Recife – PE
+              <br>Fone: (81) 98328-3224
+             </span>
+           </div><!-- clinica -->
+           <!-- <div class="col-lg-4 col-sm-4 col-md-4 clinica">
+             <img src="images/petgracas.jpg" alt="gracas pet" />
+             <span>
+              Endereço: Rua Senador Alberto Paiva, 162 - Graças, Recife - PE<br>
+              Fone: (81) 3031-5011
+             </span>
+           </div> !-->
+           <div class="col-lg-4 col-sm-4 col-md-4 clinica">
+             <img src="images/clinicao.jpg" alt="clinicao" />
+             <span>
+Endereço: Av. Norte 4616, Tamarineira, Recife – PE<br>
+Fones: (81) 3268-9759 / 98609-0030 / 99142-8081
+             </span>
+           </div><!-- clinica -->
+           <div class="col-lg-4 col-sm-4 col-md-4 clinica">
+             <img src="images/animalcontrol.jpg" alt="animalcontrol" />
+             <span>
+Endereço: Av. Norte 6741, Casa Amarela, Recife - PE<br>
+Fones: (81) 98807-3883 / 99655-7824
+             </span>
+           </div><!-- clinica -->
+           <div class="col-lg-4 col-sm-4 col-md-4 clinica">
+             <img src="images/juciara.jpg" alt="Dra Juciara Buarque" />
+             <span>
+Endereço: Rua vasco da gama, 555 b - Casa Amarela, Recife - PE<br>
+Fones: (81) 98655-4497 / 3442-3463
+             </span>
+           </div><!-- clinica -->
+           <div class="col-lg-4 col-sm-4 col-md-4 clinica">
+             <img src="images/treloso.jpg" alt="Bicho Treloso" />
+             <span>
+Endereço: Rua General Polidoro, 759 – Cidade Universitária, Recife - PE<br>
+Fone: (81) 3091-9296 / 98835-0426 / 98463-7570 / 99560-0167
+             </span>
+           </div><!-- clinica -->
+           <div class="col-lg-4 col-sm-4 col-md-4 clinica">
+             <img src="images/seuxodo.jpg" alt="Seu Xodo" />
+             <span>
+Endereço: Estrada de Belém, 1023 (Loja 00A) - Campo Grande, Recife - PE<br>
+Fone (81) 3204-2928
+             </span>
+           </div><!-- clinica -->
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </body>
+</html>
+
+<script type="text/javascript">
+    $(window).load(function(){
+        $('#myModal').modal('show')
+    });
+</script>
+
+
+        </div><!--fim container-->
+        <footer class="row clearfix">
+            <div class="container">
+                <div class="col-lg-6 div.col-md-6 col-sm-6 col-xs-12">
+                    <a href="http://www.romeroalbuquerque.com.br" target="_blank"><img src="images/romero_rodape.png" alt="Conheça o Vereador Romero Albuquerque" /></a>
+                </div>
+                <div class="col-lg-6 div.col-md-6 col-sm-6 col-xs-12">
+                    <h4>Tire suas dúvidas através do telefone: 81 3301-1435</h4>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99838407-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
