@@ -41,7 +41,7 @@ body{background-color: rgba(0, 0, 0, 0.45);}
 #formContato label{
 	color: #000
 }
-#formContato button {
+.bt{
     background: #07ffde;
     color: black;
     font-family: 'Exo', sans-serif;
@@ -68,86 +68,10 @@ body{background-color: rgba(0, 0, 0, 0.45);}
 :-ms-input-placeholder { /* Internet Explorer 10+ */
   color: #000 !important;
 }
-.payment-methods {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 .center-ul{
 	padding-left: 25px;
 }
-.payment-methods:after {
-  content: "";
-  clear: both;
-}
 
-.payment-method {
-  box-sizing: border-box;
-  float: left;
-  height: 70px;
-  position: relative;
-  width: 110px;
-}
-
-.payment-method + .payment-method {
-  margin-left: 25px;
-}
-.payment-method label {
-  background: #fff no-repeat center center;
-  bottom: 1px;
-  cursor: pointer;
-  display: block;
-  font-size: 0;
-  left: 1px;
-  position: absolute;
-  right: 1px;
-  text-indent: 100%;
-  top: 1px;
-  white-space: nowrap;
-}
-
-.membro label {
-  background-image: url(../../images/membro.png);
-	background-size: 100%
-}
-
-.jovem label {
-  background-image: url(../../images/jovem.png);
-	background-size: 100%
-}
-
-.evange label {
-  background-image: url(../../images/evangelista.png);
-	background-size: 100%
-}
-
-.obreiro label {
-  background-image: url(../../images/obreiro.png);
-	background-size: 100%
-}
-.payment-methods input:focus + label {
-  outline: 2px dotted #21b4d0;
-}
-.payment-methods input:checked + label {
-  outline: 4px solid #315270;
-}
-.payment-methods input:checked + label:after {
-  background: url(../../images/check-b-b.png);
-  bottom: -10px;
-  content: "";
-  display: inline-block;
-  height: 20px;
-  position: absolute;
-  right: -10px;
-  width: 20px;
-}
-@-moz-document url-prefix() {
-  .payment-methods input:checked + label:after {
-    bottom: 0;
-    right: 0;
-    background-color: #315270;
-  }
-}
 .btn-envia{
 	width: 100%;
 	line-height: 1.3;
