@@ -68,9 +68,6 @@ body{background-color: rgba(0, 0, 0, 0.45);}
 :-ms-input-placeholder { /* Internet Explorer 10+ */
   color: #000 !important;
 }
-.center-ul{
-	padding-left: 25px;
-}
 
 .btn-envia{
 	width: 100%;
@@ -114,12 +111,6 @@ body{background-color: rgba(0, 0, 0, 0.45);}
 }
 @media (max-width: 1024px){
 	
-	.payment-method + .payment-method {
-		margin-left: 6px;
-	}
-	.center-ul {
-		padding-left: 55px;
-	}
 	.panel {
 		width: 100%;
 		margin: 0 auto;
@@ -130,5 +121,17 @@ body{background-color: rgba(0, 0, 0, 0.45);}
 	.img-pad{
 		width: 89%;
 		padding: 5px 5px 15px 10px;
+	}
+
+	.padding-body{
+		padding: 10px;
+	}
+	.bt{
+		width: 100%;
+	}
+	.panel-title h3, h5{
+		font-weight: bold !important;
+		font-family: verdana;
+		padding: 5px 0px 10px 0px;
 	}
 }
