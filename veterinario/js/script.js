@@ -12,6 +12,9 @@ $(document).ready(function () {
                 strFone: {
                     required: true
                 },
+                strMensagem: {
+                    required: true
+                },
             },
             errorPlacement: function (error, element) {
                 return true;
@@ -28,7 +31,7 @@ $(document).ready(function () {
                 var dados = $("#formContato").serialize();
 
                 $.ajax({
-                    url: '../php/voluntario.php',
+                    url: '../php/veterinario.php',
                     data: dados,
                     type: 'post',
                     dataType: 'json',
