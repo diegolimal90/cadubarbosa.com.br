@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Atendimento Veterinário - Cadu Barbosa</title>
+		
+       	
+
+        <meta property="og:title" content="Campanha de Castração" />
+        <meta property="og:description" content="Por Cadu Barbosa" />
+        
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/bootstrap.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" >
+
+        <link href="https://fonts.googleapis.com/css?family=Exo:400,700" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+         <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        
+        <link rel="icon" href="favicon.png" type="image/x-icon">
+
+        <!-- CSS Style -->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+
+    <body>
+       	<div class="row clearfix text-center topbar">
+            <a href="../index.html"><img src="../images/logo.png"  /></a>
+        </div><!--topbar-->
+        <div class="container central">
+            <div class="row clearfix header">
+                <div class="col-lg-6"><img src="images/logo.png" class="img-responsive"  /></div>
+            </div>
+            <div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="panel-title">
+						<h3 class="text-center">Solicite aqui atendimento veterinário grátis para Animais da Cidade de Praia Grande.</h3>
+						<h5 class="text-center">Preencha o formulário para que a nossa equipe possa entrar em contato com você.<br>
+		 * Todos os seus dados são mantidos em sigilo e jamais serão divulgados </h5>
+					<h4 class="text-center" style="color:black;">OBS.: O solicitante terá que levar o animal para o local indicado</h4>
+					</div>
+				</div>
+				<div class="panel-body">
+					<form method="post" name="formContato" id="formContato">
+						<div class="col-lg-12">
+							<h4>Dados Pessoais</h4>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strNome" name="strNome" placeholder="Nome">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strFone" name="strFone" placeholder="Telefone" onkeypress="mascara(this, masktelefone)" maxlength="15">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" id="strEmail" name="strEmail" placeholder="E-mail">
+						</div>
+						<div class="col-lg-12">
+							<h4>Detalhes do Atendimento </h4>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strCep" name="strCep" placeholder="CEP" onkeypress="mascara(this, maskcep)" maxlength="9">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strCidade" name="strCidade" placeholder="Cidade">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strBairro" name="strBairro" placeholder="Bairro">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strRua" name="strRua" placeholder="Rua">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="strComplemento" name="strComplemento" placeholder="Complemento">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" rows="3" id="strMensagem" name="strMensagem" placeholder="Comentários sobre o caso a ser examinado"></textarea>
+						</div>
+						<div class="col-lg-12 text-center">
+							<span class="aviso text-center">As solicitações serão respondidas em até 3 dias úteis </span>
+							<button type="submit" id="btnEnviar">SOLICITAR!</button>
+							<div id="contato_erro"></div>
+						</div>
+					</form>
+				</div>
+			</div>
+        </div><!--fim container-->
+
+       <!-- Modal -->
+<div class="modal atencao fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="myModalLabel">Atenção</h2>
+      </div>
+      <div class="modal-body">
+        
+Serviço de consulta médica veterinária gratuita.
+<br><br>
+Após a solicitação, o solicitante receberá uma resposta em até 3 dias úteis com o respectivo voucher para atendimento na clínica parceira indicada.
+<br><br>
+<span style="color:red;">Obs: Exames, internação, cirurgia, medicamentos e serviços adicionais serão cobrados pela clínica veterinária, de acordo com sua respectiva tabela de preços</span>
+<br><br>
+Horário de atendimento: Segunda a Sexta, conforme agendamento.
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Entendi</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $(window).load(function(){
+        $('#myModal').modal('show')
+    });
+</script>
+
+    </body>
+</html>
