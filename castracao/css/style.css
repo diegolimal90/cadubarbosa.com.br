@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background-color: rgba(139, 90, 227, 0.44);
+    background-color: rgba(0, 0, 0, 0.45);
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     overflow-x:hidden;
@@ -72,7 +72,7 @@ table {
     margin-top:30px;
     text-transform: uppercase;
 }
-.romero span {color: #8b59e3; font-weight: 700;}
+.romero span {color: #e2f700; font-weight: 700;}
 .central label {font-weight: normal;padding-left: 5px;margin-bottom: 5px;}
 .central input {
     border:none;
@@ -81,14 +81,14 @@ table {
 }
 .aviso {font-size: 14px;color: red;margin-bottom:20px;/* padding-bottom: 20px; */float: left;width: 100%;}
 .central h4 {
-    color: #8b59e3;
+    color: #ed1c24;
     font-family: 'Exo', sans-serif;
     text-transform: uppercase;
     padding-top: 20px;
     margin-bottom: 11px;
 }
 .central button {
-    background: #8b59e3;
+    background: #ed1c24;
     color: black;
     font-family: 'Exo', sans-serif;
     text-transform: uppercase;
@@ -115,12 +115,12 @@ p.sucesso {
 
 #formContato input, select{
 	font-size: 20px !important;
-	border: 1px solid #8b59e3 !important;
+	border: 1px solid #ed1c24 !important;
     height: 52px !important;
 }
 #formContato textarea{
 	font-size: 20px !important;
-	border: 1px solid #8b59e3 !important;
+	border: 1px solid #ed1c24 !important;
 	resize: none;
 }
 #formContato label{
