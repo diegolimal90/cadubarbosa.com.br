@@ -31,7 +31,7 @@ $(document).ready(function () {
                 var dados = $("#formContato").serialize();
 
                 $.ajax({
-                    url: 'ajax/contato.ajax.php',
+                    url: '../php/solicita.php',
                     data: dados,
                     type: 'post',
                     dataType: 'json',
@@ -40,7 +40,7 @@ $(document).ready(function () {
                         $("#btnEnviar").prop('disabled', true);
                     },
                     complete: function () {
-                        $("#btnEnviar").html('DENUNCIAR');
+                        $("#btnEnviar").html('SOLICITAR');
                         $("#btnEnviar").prop('disabled', false);
                     },
                     success: function (result) {
@@ -74,6 +74,26 @@ $(document).ready(function () {
                     $("#strBairro").val(result.bairro);
                     $("#strRua").val(result.logradouro);
                     $("#strComplemento").val(result.complemento);
+                }
+            });
+        }
+    })
+
+    $("#strCep1").keyup(function () {
+
+        if ($("#strCep1").val().length >= 9) {
+
+            valorCep = $("#strCep1").val();
+
+            $.ajax({
+                url: 'https://viacep.com.br/ws/' + valorCep + '/json/',
+                type: 'get',
+                dataType: 'json',
+                success: function (result) {
+                    $("#strCidade1").val(result.localidade);
+                    $("#strBairro1").val(result.bairro);
+                    $("#strRua1").val(result.logradouro);
+                    $("#strComplemento1").val(result.complemento);
                 }
             });
         }
