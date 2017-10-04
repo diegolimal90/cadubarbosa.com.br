@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body + object {display: none;}
 body {
     line-height: 1;
-    background:url(../images/bgnv.jpg) no-repeat;
+    background:url(../images/nvbg.jpg) no-repeat;
 	background-position: center;
 	background-size: 105% 105%;
     font-family: 'Open Sans', sans-serif;
@@ -104,8 +104,8 @@ table {
     font-size: 24px;
 }*/
 footer {
-    background: #333;
-    padding-top:15px;
+    background: rgba(51, 51, 51, 0.71);
+    padding-top:5px;
 }
 footer a {
     cursor: pointer;
@@ -113,7 +113,7 @@ footer a {
 footer h4 {
     font-size: 15px;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     opacity: 0.8;
 }
 .faq h2{
@@ -189,4 +189,10 @@ footer h4 {
 
 :-ms-input-placeholder { /* Internet Explorer 10+ */
   color: #000 !important;
+}
+
+@media (max-width: 1024px){
+	body{
+		background: #6F6F6F;
+	}
 }
