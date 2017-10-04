@@ -4,7 +4,10 @@
 }
 
 html, body {height:100%;}
-body{background-color: rgba(0, 0, 0, 0.45);}
+body{
+	background-color: rgba(0, 0, 0, 0.45);
+	color: #e2f700;
+}
 .page-header{
 	border-bottom: none;
 	margin: 0px 0px 10px 0px;
@@ -27,22 +30,24 @@ body{background-color: rgba(0, 0, 0, 0.45);}
 .padding-body{
 	padding: 20px;
 }
-
+#formContato .col-lg-12{
+	padding: 0px;
+}
 #formContato input, select{
 	font-size: 20px !important;
-	border: 1px solid #07ffde !important;
+	border: 1px solid #e2f700 !important;
     height: 52px !important;
 }
 #formContato textarea{
 	font-size: 20px !important;
-	border: 1px solid #07ffde !important;
+	border: 1px solid #e2f700 !important;
 	resize: none;
 }
 #formContato label{
 	color: #000
 }
 .bt{
-    background: #07ffde;
+    background: #e2f700;
     color: black;
     font-family: 'Exo', sans-serif;
     text-transform: uppercase;
