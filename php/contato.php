@@ -43,7 +43,7 @@ require 'api/PHPMailer/PHPMailerAutoload.php';
 
 	//configurar cabeçalho de email
 	$mail ->setFrom('contato@cadubarbosa.com.br', 'Site Cadu Barbosa');		//insere o remetente
-	$mail ->addAddress('contato@cadubarbosa.com.br', 'Site Cadu Barbosa');					//adiciona o destinatario
+	$mail ->addAddress('atendimento@cadubarbosa.com.br', 'Atendimento Cadu Barbosa');					//adiciona o destinatario
 	$mail ->isHTML(true);											//formato do email em html
 
 	//conteudo do email
