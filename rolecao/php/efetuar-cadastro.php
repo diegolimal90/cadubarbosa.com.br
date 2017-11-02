@@ -36,6 +36,7 @@ if(isset($_POST['strNome'])){
 	$rua = $_POST['strRua'];
 	$comple = $_POST['strComplemento'];
 	$nm_animal = $_POST['strAmigo'];
+	$detalhes = 'Você acabou de efetuar sua inscrição. No dia do evento você terá que chegar até as 8h30 e levar 1KG de ração para retirar a camisa, após este horário o não comparecimento não garantirá mais sua camiseta que será distribuída aos presentes que estiverem sem camisetas e que farão a inscrição na hora. <br /><br />Duvidas ou maiores informações mande um e-mail para <span style="font-size: 22px; color: green;">atendimento@cadubarbosa.com.br</span>';
 	
 	$valores = array(
 		'color' => '#ff8526',
@@ -51,13 +52,14 @@ if(isset($_POST['strNome'])){
 		'cidade' => utf8_decode($cidade), 		
 		'bairro' => utf8_decode($bairro),		
 		'rua' => utf8_decode($rua), 			
-		'complemento' => utf8_decode($comple)			 
+		'complemento' => utf8_decode($comple),
+		'detalhes' => utf8_decode($detalhes)
 	);
 	
 	$cadastro->setParams($nome, $fone, $cel, $email, $tam, $cep, $cidade, $bairro, $rua, $comple, $nm_animal);
 	
 	//configurar cabeçalho de email
-	$mail ->setFrom('contato@cadubarbosa.com.br', 'Evento Rolé-cão');		//insere o remetente
+	$mail ->setFrom('contato@cadubarbosa.com.br', 'Evento Role-cao');		//insere o remetente
 	$mail ->addAddress($email);												//adiciona o destinatario
 	//$mail->addCC('contato@dvs.solutions');								//envio de copia de email
 	$mail ->isHTML(true);													//formato do email em html
