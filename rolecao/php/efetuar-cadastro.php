@@ -59,10 +59,10 @@ if(isset($_POST['strNome'])){
 	$cadastro->setParams($nome, $fone, $cel, $email, $tam, $cep, $cidade, $bairro, $rua, $comple, $nm_animal);
 	
 	//configurar cabeçalho de email
-	$mail ->setFrom('evento@cadubarbosa.com.br', 'Evento Role-cao');		//insere o remetente
-	$mail ->addAddress($email);					//adiciona o destinatario
-	//$mail->addCC('contato@dvs.solutions');							//envio de copia de email
-	$mail ->isHTML(true);											//formato do email em html
+	$mail ->setFrom('contato@cadubarbosa.com.br', 'Site Cadu Barbosa');		//insere o remetente
+	$mail ->addAddress($email);												//adiciona o destinatario
+	//$mail->addCC('contato@dvs.solutions');								//envio de copia de email
+	$mail ->isHTML(true);													//formato do email em html
 	
 	$template = file_get_contents('../template_email/template_rolecao.html');
 
@@ -73,9 +73,8 @@ if(isset($_POST['strNome'])){
 	}
 	
 	if($cadastro->insert()){
+		$mail->send();
 		die(json_encode(array('status' => 'ok')));
-		
-		
 	}else{
 		die(json_encode(array('status' => 'not ok')));
 	}
