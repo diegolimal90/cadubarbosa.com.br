@@ -30,7 +30,7 @@ require 'api/PHPMailer/PHPMailerAutoload.php';
 	$valores = array(
 		'color' => '#e2f700',
 		'titulo' => utf8_decode('ATENDIMENTO VETERINÁRIO'),
-		'subtitulo1' => utf8_decode('Dados da Pessoal'),
+		'subtitulo1' => utf8_decode('Dados da Pessoa'),
 		'subtitulo2' => utf8_decode('DETALHES DOS ATENDIMENTO'),
 		'nome' => utf8_decode($nome),
 		'fone' => $fone, 			 
