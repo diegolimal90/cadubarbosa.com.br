@@ -1,5 +1,5 @@
 <?php
-require 'Classes/Cadastro.php';
+require 'Autoload.php';
 require 'api/PHPMailer/PHPMailerAutoload.php';
 
 $cadastro = new Cadastro();
@@ -41,6 +41,7 @@ if(isset($_POST['strNome'])){
 		'color' => '#ff8526',
 		'titulo' => utf8_decode('Rolé-cão'),
 		'subtitulo1' => utf8_decode('Dados da Pessoa/Amiguinho(a)'),
+		'subtitulo2' => utf8_decode('DETALHES DO Evento'),
 		'nome' => utf8_decode($nome),
 		'fone' => $fone, 			 
 		'cel' => $cel, 			 
@@ -51,7 +52,8 @@ if(isset($_POST['strNome'])){
 		'cidade' => utf8_decode($cidade), 		
 		'bairro' => utf8_decode($bairro),		
 		'rua' => utf8_decode($rua), 			
-		'complemento' => utf8_decode($comple)			 
+		'complemento' => utf8_decode($complemento), 	
+		'mensagem' => utf8_decode($mensagem) 			 
 	);
 	
 	$cadastro->setParams($nome, $fone, $cel, $email, $tam, $cep, $cidade, $bairro, $rua, $comple, $nm_animal);
@@ -62,7 +64,7 @@ if(isset($_POST['strNome'])){
 	//$mail->addCC('contato@dvs.solutions');								//envio de copia de email
 	$mail ->isHTML(true);													//formato do email em html
 	
-	$template = file_get_contents('../../template_email/template_rolecao.html');
+	$template = file_get_contents('../template_email/template_rolecao.html');
 
 	foreach($valores as $chave => $valor){
 
@@ -70,17 +72,9 @@ if(isset($_POST['strNome'])){
 
 	}
 	
-	
 	if($cadastro->insert()){
-		//conteudo do email
-		$mail ->Subject = utf8_decode("Evento ROLÉ-CÃO");//adiciona assunto ao email
-		$mail ->Body = $template;
-		if(!$mail->send()) {
-			//die(json_encode(array('status' => 'Mensagem nao foi enviada.')));
-			echo 'Error: ' . $mail->ErrorInfo;
-		} else {
-			die(json_encode(array('status' => 'ok')));
-		}
+		$mail->send();
+		die(json_encode(array('status' => 'ok')));
 	}else{
 		die(json_encode(array('status' => 'not ok')));
 	}
