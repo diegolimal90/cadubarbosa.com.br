@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/* ============================================================
+GALLERY
+============================================================ */
+.launch-gallery {
+  margin-bottom: 50px;
+}
+.launch-gallery:before,
+.launch-gallery:after {
+  content: " ";
+  display: table;
+}
+.launch-gallery:after {
+  clear: both;
+}
+.launch-gallery header {
+  margin-bottom: 36px;
+}
+.launch-gallery header h2,
+.launch-gallery-title {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 44px 0;
+  color: #3e464b;
+  font-weight: 900;
+  text-align: center;  
+}
+.launch-gallery header p {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 24px;
+  color: #acacac;
+}
+.launch-gallery .gallery-item {
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.launch-gallery .gallery-item:before,
+.launch-gallery .gallery-item:after {
+  content: " ";
+  display: table;
+}
+.launch-gallery .gallery-item:after {
+  clear: both;
+}
+.launch-gallery .gallery-item .media {
+  position: relative;
+  margin-bottom: 10px;
+}
+.launch-gallery .gallery-item .media img {
+  width: 100%;
+}
+.launch-gallery .gallery-item .mask {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  z-index: 1;
+  background-color: #0bbffb;
+}
+.launch-gallery .gallery-item blockquote {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  font-style: italic;
+  color: #6e91a7;
+  padding-right: 15px;
+  margin-bottom: 12px;
+}
+.launch-gallery .gallery-item .link {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-size: 16px;
+  font-style: italic;
+  color: #0bb8fa;
+  padding-bottom: 3px;
+  border-bottom: 1px dashed #0bb8fa;
+}
+.launch-gallery .gallery-item:hover .mask {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.launch-gallery .gallery-item:hover .link {
+  color: #0bb8fa;
+}
+.launch-gallery .gallery-item.gallery-video .link:before {
+  margin-right: 6px;
+}
+.launch-gallery .gallery-item.gallery-video .media:before {
+  background-repeat: no-repeat;
+  background-image: url('../../images/ico/play.png');
+  content: '';
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 45px;
+  height: 45px;
+  z-index: 2;
+}
+.launch-gallery .bx-wrapper .bx-pager.bx-default-pager a {
+  background-repeat: no-repeat;
+  background-image: url('../../images/sprite/bullets.png');
+  background-color: transparent;
+  width: 13px;
+  height: 13px;
+  position: relative;
+}
+.launch-gallery .bx-wrapper .bx-pager.bx-default-pager a:before {
+  background-repeat: no-repeat;
+  background-image: url('../../images/sprite/bullets.png');
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: -27px 0;
+  content: '';
+}
+
+.launch-gallery .bx-wrapper .bx-pager.bx-default-pager a:hover:before {
+  opacity: 0.25;
+  filter: alpha(opacity=25);
+}
+.launch-gallery .bx-wrapper .bx-pager.bx-default-pager a.active:before {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+#modal-gallery-video,
+#modal-gallery-text {
+  width: 750px;
+  display: none;
+}
+#modal-gallery-video header,
+#modal-gallery-text header {
+  padding: 26px 28px;
+  margin-bottom: 0;
+}
+#modal-gallery-video header:before,
+#modal-gallery-text header:before,
+#modal-gallery-video header:after,
+#modal-gallery-text header:after {
+  content: " ";
+  display: table;
+}
+#modal-gallery-video header:after,
+#modal-gallery-text header:after {
+  clear: both;
+}
+#modal-gallery-video .people-text,
+#modal-gallery-text .people-text {
+  float: left;
+  margin-top: 2px;
+}
+#modal-gallery-video .people-image,
+#modal-gallery-text .people-image {
+  -webkit-border-radius: 72px;
+  -moz-border-radius: 72px;
+  border-radius: 72px;
+  float: left;
+  width: 72px;
+  height: 72px;
+  display: block;
+  margin-right: 28px;
+}
+#modal-gallery-video .people-name,
+#modal-gallery-text .people-name {
+  font-size: 30px;
+  font-weight: 300;
+  color: #0bbffb;
+  margin-bottom: 10px;
+  text-transform: none;
+}
+#modal-gallery-video .people-description,
+#modal-gallery-text .people-description {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #3e464b;
+}
+#modal-gallery-video .content,
+#modal-gallery-text .content {
+  margin-bottom: 25px;
+}
+#modal-gallery-video .content iframe,
+#modal-gallery-text .content iframe {
+  background-color: #000;
+}
+#modal-gallery-video footer,
+#modal-gallery-text footer {
+  padding: 0 30px;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 20px;
+}
+#modal-gallery-video footer:before,
+#modal-gallery-text footer:before,
+#modal-gallery-video footer:after,
+#modal-gallery-text footer:after {
+  content: " ";
+  display: table;
+}
+#modal-gallery-video footer:after,
+#modal-gallery-text footer:after {
+  clear: both;
+}
+#modal-gallery-video footer .highlight,
+#modal-gallery-text footer .highlight {
+  color: #0bbffb;
+}
+#modal-gallery-video footer p,
+#modal-gallery-text footer p {
+  font-weight: 300;
+  color: #3e464b;
+  margin-bottom: 10px;
+}
+#modal-gallery-video footer .fb-like,
+#modal-gallery-text footer .fb-like {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+#modal-gallery-text .content {
+  padding: 27px 0 27px 35px;
+  background-color: #f9f9f9;
+}
+#modal-gallery-text .box-text {
+  border-left: 2px solid #0bb8fa;
+  font-size: 22px;
+  line-height: 1.36;
+  padding-left: 27px;
+  color: #3e464b;
+  font-weight: 300;
+  font-style: italic;
+  padding-right: 35px;
+  padding-bottom: 10px;
+}
+@media (max-width: 991px) {
+  .launch-gallery {
+    margin-bottom: 30px;
+  }
+  .launch-gallery header {
+    margin-bottom: 50px;
+  }
+  .launch-gallery header h2 {
+    font-size: 32px;
+    margin-bottom: 45px;
+  }
+  .launch-gallery .gallery-item {
+    margin-bottom: 45px;
+  }
+  .launch-gallery .gallery-item .media {
+    width: 278px;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 0;
+  }
+  .launch-gallery .gallery-item .link {
+    font-size: 21px;
+    line-height: 48px;
+    height: 50px;
+    padding: 0;
+    border: 1px solid #0bb8fa;
+    width: 190px;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+  }
+  .launch-gallery .gallery-item blockquote {
+    max-width: 850px;
+  }
+}
+@media (max-width: 767px) {
+  #modal-gallery-video,
+  #modal-gallery-text {
+    width: 590px;
+  }
+  #modal-gallery-video footer,
+  #modal-gallery-text footer {
+    text-align: center;
+  }
+  #modal-gallery-video .pull-left,
+  #modal-gallery-text .pull-left,
+  #modal-gallery-video .pull-right,
+  #modal-gallery-text .pull-right {
+    float: none !important;
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 639px) {
+  .launch-gallery header {
+    padding: 0 20px;
+  }
+  .launch-gallery .gallery-item {
+    width: 278px;
+    margin: 0 auto 20px;
+  }
+  .launch-gallery .gallery-item .media {
+    margin: 0 auto 25px;
+    float: none;
+  }
+  .launch-gallery .gallery-item .link {
+    padding: 0 20px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: normal;
+    position: static;
+  }
+  #modal-gallery-video,
+  #modal-gallery-text {
+    width: 100%;
+  }
+  #modal-gallery-video header,
+  #modal-gallery-text header {
+    text-align: center;
+  }
+  #modal-gallery-video .people-image,
+  #modal-gallery-text .people-image {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 479px) {
+  .launch-gallery header h2,
+  .launch-gallery-title {
+    font-size: 7vw;
+  }
+}

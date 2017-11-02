@@ -1,0 +1,138 @@
+/* Reset */
+
+.fancybox-skin {
+    background: transparent;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal-download {
+    width: 100%;
+    max-width: 730px;
+    background: #fff;
+    display: none;
+}
+
+.modal-download-header {
+    padding: 17px 52px;
+    background-color: #f0f5f7;
+    border-bottom: 1px solid #dee8ec;
+}
+
+.modal-progress {
+    border: 1px solid #cfcfcf;
+    padding: 1px;
+    height: 31px;
+    background-color: #fff;
+}
+
+.modal-progress .progress-bar {
+    font-size: 14px;
+    line-height: 31px;
+    font-weight: bold;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.modal-download .progress-bar-warning {
+    background-color: #f3a51d;
+}
+
+.progress-description {
+    font-size: 16px;
+    text-align: center;
+    color: #3e464b;   
+    display: block;    
+}
+
+.modal-download-content {
+    padding: 0 52px 20px;
+}
+
+.modal-title {
+    margin: 15px 0 20px;
+    padding: 0 20px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #3e464b;
+    text-align: center;
+}
+
+.modal-image {
+    width: 206px;
+    float: left;
+}
+
+.modal-form {
+    float: right;
+    width: 100%;
+    max-width: 338px;
+    border: 2px dashed #c1c1c1;
+    padding: 25px 21px;
+    margin-bottom: 20px;
+    text-align: center;    
+    margin-top: 25px;
+}
+
+.modal-form .form-group {
+    margin-bottom: 0;
+}
+
+.modal-form .general-button {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    background-color: #3eaff0;
+    top: 0 !important;
+    font-size: 18px;
+    padding: 17px;
+    margin-bottom: 0;
+}
+
+.modal-security {
+    max-width: 338px;
+    width: 100%;
+    float: right;    
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    display: inline-block;    
+    padding-left: 20px;
+}
+
+.modal-security .ico {
+    content: url(../images/lock.png);
+    vertical-align: 0;
+    margin-right: 10px;
+}
+
+
+@media (max-width: 767px) {
+
+    .modal-download-header,
+    .modal-download-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .modal-image {
+        display: none;        
+    }
+    .modal-title {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .modal-form,
+    .modal-security {
+        display: block;        
+        float: none;        
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;        
+    }
+
+}    
