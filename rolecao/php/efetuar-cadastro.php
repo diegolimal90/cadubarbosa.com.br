@@ -41,6 +41,7 @@ if(isset($_POST['strNome'])){
 	$valores = array(
 		'color' => '#ff8526',
 		'titulo' => utf8_decode('Rolé-cão'),
+		'subtitulo' => utf8_decode('DATA DO EVENTO: 10 de DEZEMBRO de 2017'),
 		'subtitulo1' => utf8_decode('Dados da Pessoa/Amiguinho(a)'),
 		'nome' => utf8_decode($nome),
 		'fone' => $fone, 			 
