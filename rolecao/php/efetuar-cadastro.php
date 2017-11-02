@@ -57,7 +57,7 @@ if(isset($_POST['strNome'])){
 	$cadastro->setParams($nome, $fone, $cel, $email, $tam, $cep, $cidade, $bairro, $rua, $comple, $nm_animal);
 	
 	//configurar cabeçalho de email
-	$mail ->setFrom('contato@cadubarbosa.com.br', 'Site Cadu Barbosa');		//insere o remetente
+	$mail ->setFrom('contato@cadubarbosa.com.br', 'Evento Rolé-cão');		//insere o remetente
 	$mail ->addAddress($email);												//adiciona o destinatario
 	//$mail->addCC('contato@dvs.solutions');								//envio de copia de email
 	$mail ->isHTML(true);													//formato do email em html
