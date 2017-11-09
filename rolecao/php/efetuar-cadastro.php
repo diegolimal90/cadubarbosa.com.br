@@ -36,7 +36,7 @@ if(isset($_POST['strNome'])){
 	$rua = $_POST['strRua'];
 	$comple = $_POST['strComplemento'];
 	$nm_animal = $_POST['strAmigo'];
-	$detalhes = 'Você acabou de efetuar sua inscrição. No dia do evento você terá que chegar até as 8h30 e levar 1KG de ração para retirar a camisa, após este horário o não comparecimento não garantirá mais sua camiseta que será distribuída aos presentes que estiverem sem camisetas e que farão a inscrição na hora. <br /><br />Duvidas ou maiores informações mande um e-mail para <span style="font-size: 22px; color: green;">atendimento@cadubarbosa.com.br</span>';
+	$detalhes = 'Você acabou de efetuar sua inscrição. No dia do evento você terá que chegar até as 8h30 e pagar R$ 10,00 para retirar a camisa, após este horário o não comparecimento não garantirá mais sua camiseta que será distribuída aos presentes que estiverem sem camisetas e que farão a inscrição na hora. <br /><br />Duvidas ou maiores informações mande um e-mail para <span style="font-size: 22px; color: green;">atendimento@cadubarbosa.com.br</span>';
 	
 	$valores = array(
 		'color' => '#ff8526',
