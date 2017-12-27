@@ -54,26 +54,26 @@
             
             <div class="row clearfix escolha">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <a href="" data-toggle="modal" data-target="#recesso"><img src="images/centraldenuncia.png" alt="central de denuncias" /></a>
+                    <a href="denuncias/"><img src="images/centraldenuncia.png" alt="central de denuncias" /></a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <a href="castracao/"><img src="images/castracao.png" alt="castração gratuita" /></a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <a href="" data-toggle="modal" data-target="#recesso"><img src="images/veterinario.png" alt="atendimento veterinario" /></a>
+                    <a href="veterinario/"><img src="images/veterinario.png" alt="atendimento veterinario" /></a>
                 </div>
             </div>
             <div class="row clearfix escolha">
               
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <a href="" data-toggle="modal" data-target="#recesso"><img src="images/voluntario.png" alt="seja 1 voluntario" /></a>
+                    <a href="voluntario/"><img src="images/voluntario.png" alt="seja 1 voluntario" /></a>
                 </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <a data-toggle="modal" data-target="#myModal"><img src="images/entreEmcontato.png" alt="entre em contato" /></a>
                 </div>
                 
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <a href="" data-toggle="modal" data-target="#recesso"><img src="images/solicita.png" alt="solicita central de requerimentos" /></a>
+                    <a href="solicita/" ><img src="images/solicita.png" alt="solicita central de requerimentos" /></a>
                 </div>
 			</div>
 
@@ -141,28 +141,9 @@
 		</div>
    		<!-- End Modal -->
    		
-   		<!-- Modal divulgação evento-->
-		<div class="modal contato fade" id="recesso" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content" style="color: #ff8526;">
-					<div class="modal-header" style="border: none">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h1 class="modal-title" id="myModalLabel">AVISO</h1>
-					</div>
-					<div class="modal-body" style="font-size: 30px; font-weight: bold; text-transform: uppercase; text-align: center">
-						<h1>ESTAMOS DE RECESSO LOGO RETORNAREMOS DEIXO SEU CONTATO NO BOTÂO ENTRE EM CONTATO!</h1>
-					</div>
-					<div class="modal-footer" style="border: none">
-						<button class="btn btn-success" data-dismiss="modal">OK ENTENDI!</button>
-					</div>
-				</div>
-			</div>
-		</div>
-   		<!-- End Modal -->
-   		
    		<script type="text/javascript">
 			jQuery(document).ready(function(){
-				$('#recesso').modal('show');
+				//$('#Evento').modal('show');
 			});
 		</script>
     </body>
